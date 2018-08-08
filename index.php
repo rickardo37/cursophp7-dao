@@ -38,13 +38,19 @@ require_once("config.php");
 //#####################################################
 
 //FAZ UMA EDIÇÃO DE UM REGISTRO
+//$usuario = new Usuario();
+//$usuario->loadById(13);
+//$usuario->update("professor","rreeww");
+//echo $usuario;
+//#########################################################
+
+
+//####FAZ A EXCLUSÃO DE UM ARQUIVO#######################
 $usuario = new Usuario();
-$usuario->loadById(13);
-$usuario->update("professor","rreeww");
+$usuario->loadById(8);
+$usuario->delete();
+
 echo $usuario;
-
-
-
-
+//#########################################################
 
 ?>
